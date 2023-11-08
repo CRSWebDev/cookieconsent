@@ -2247,7 +2247,7 @@
         return _cookieconsent;
     };
 
-    var init = 'initCookieConsent';
+    var init = 'cookiesSpravneInitCookieConsent';
     /**
      * Make CookieConsent object accessible globally
      */
