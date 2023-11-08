@@ -1570,7 +1570,7 @@
          * @returns {{accepted: string[], rejected: string[]}}
          */
         var _getCurrentCategoriesState = function(){
-            
+
             // get accepted categories
             accepted_categories = saved_cookie_content['level'] || [];
 
@@ -1581,13 +1581,13 @@
 
             return {
                 accepted: accepted_categories,
-                rejected: rejected_categories 
+                rejected: rejected_categories
             }
         }
 
         /**
          * Calculate "accept type" given current categories state
-         * @param {{accepted: string[], rejected: string[]}} currentCategoriesState 
+         * @param {{accepted: string[], rejected: string[]}} currentCategoriesState
          * @returns {string}
          */
         var _getAcceptType = function(currentCategoriesState){
@@ -1603,7 +1603,7 @@
             if(currentCategoriesState.accepted.length === toggle_categories.length)
                 type = 'all';
             else if(
-                currentCategoriesState.rejected.length >= 0 && 
+                currentCategoriesState.rejected.length >= 0 &&
                 currentCategoriesState.accepted.length === necessary_categories_count
             )
                 type = 'necessary'
@@ -2039,7 +2039,7 @@
         return _cookieconsent;
     };
 
-    var init = 'initCookieConsent';
+    var init = 'cookiesSpravneInitCookieConsent';
     /**
      * Make CookieConsent object accessible globally
      */
